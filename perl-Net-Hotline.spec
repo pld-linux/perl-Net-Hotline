@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Hotline
-Summary:	Net::Hotline perl module
-Summary(pl):	Modu³ perla Net::Hotline
+Summary:	Net::Hotline - Perl libraries for the Hotline internet client
+Summary(pl):	Net::Hotline - biblioteki perla dla internetowego klienta Hotline
 Name:		perl-Net-Hotline
 Version:	0.83
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -22,10 +22,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::Hotline - Perl libraries for the Hotline internet client.
+Net::Hotline::Client is a class implementing a Hotline internet client
+in Perl.  It was specifically developed to aid in the creation of Hotline
+"bots," although it's suitable for most other tasks as well. Hotline is
+an internet client/server system that's sort of a cross between IRC and
+a BBS.  See http://www.hotlinesw.com/ for more information.
 
-%description -l pl
-Net::Hotline - biblioteki perla dla internetowego klienta Hotline.
+# %description -l pl
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
