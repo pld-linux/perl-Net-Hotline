@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Hotline
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net-Hotline perl module
 Summary(pl):	Modu³ perla Net-Hotline
 Name:		perl-Net-Hotline
 Version:	0.80
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Net-Hotline - Perl libraries for the Hotline internet client.
 Net-Hotline - biblioteki perla dla intenetowego klienta Hotline.
 
 %prep
-%setup -q -n Net-Hotline-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p0
 
 %build
