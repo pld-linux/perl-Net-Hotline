@@ -6,9 +6,10 @@ Version:	0.78
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Hotline-%{version}.tar.gz
-Patch0:		perl-Net-Hotline-paths.patch
+Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6
 %requires_eq	perl
@@ -31,12 +32,11 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install Examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
-
+install Examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf Changes README TODO
 
@@ -45,13 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README,TODO}.gz
-
+%doc *.gz
 %{perl_sitelib}/Net/Hotline.pm
 %{perl_sitelib}/Net/Hotline
 %{perl_sitelib}/auto/Net/Hotline
-%{perl_sitearch}/auto/Net/Hotline
-
 %{_mandir}/man3/*
-
-%{_prefix}/src/examples/%{name}
+%{_examplesdir}/%{name}-%{version}
