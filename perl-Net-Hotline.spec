@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Hotline
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla Net::Hotline
 Name:		perl-Net-Hotline
 Version:	0.83
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2efc774c5499f1e8919e140e274321c5
@@ -31,11 +36,14 @@ Net::Hotline - biblioteki perla dla internetowego klienta Hotline.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install Examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
