@@ -28,7 +28,7 @@ Net::Hotline - biblioteki perla dla internetowego klienta Hotline.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
