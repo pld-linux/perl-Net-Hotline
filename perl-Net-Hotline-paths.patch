@@ -1,0 +1,16 @@
+--- Examples.paths/hibot.pl	Sat Mar 27 17:48:20 1999
++++ Examples/hibot.pl	Sun Oct 17 13:27:35 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -s
++#!/usr/bin/perl -s
+ 
+ ## Copyright(c) 1998 by John C. Siracusa.  All rights reserved.  This program
+ ## is free software; you can redistribute it and/or modify it under the same
+--- Examples.paths/hlftp.pl	Sat Mar 27 17:48:23 1999
++++ Examples/hlftp.pl	Sun Oct 17 13:27:43 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ 
+ ## Copyright(c) 1998 by John C. Siracusa.  All rights reserved.  This program
+ ## is free software; you can redistribute it and/or modify it under the same
