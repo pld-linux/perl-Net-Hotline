@@ -10,8 +10,8 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Net::Hotline - Perl libraries for the Hotline internet client.
 
 %description -l pl
-Net::Hotline - biblioteki perla dla intenetowego klienta Hotline.
+Net::Hotline - biblioteki perla dla internetowego klienta Hotline.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -37,14 +37,12 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install Examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf Changes README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README TODO
 %{perl_sitelib}/Net/Hotline.pm
 %{perl_sitelib}/Net/Hotline.pod
 %{perl_sitelib}/Net/Hotline
