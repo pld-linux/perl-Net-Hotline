@@ -4,8 +4,8 @@
 Summary:	Net::Hotline perl module
 Summary(pl):	Modu³ perla Net::Hotline
 Name:		perl-Net-Hotline
-Version:	0.80
-Release:	3
+Version:	0.81
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -46,6 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %{perl_sitelib}/Net/Hotline.pm
+%{perl_sitelib}/Net/Hotline.pod
 %{perl_sitelib}/Net/Hotline
 %{perl_sitelib}/auto/Net/Hotline
 %{_mandir}/man3/*
