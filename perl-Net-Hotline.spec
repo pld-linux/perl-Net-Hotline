@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Hotline
+%define		pdir	Net
+%define		pnam	Hotline
 Summary:	Net::Hotline - Perl libraries for the Hotline internet client
 Summary(pl):	Net::Hotline - biblioteki Perla dla internetowego klienta Hotline
 Name:		perl-Net-Hotline
