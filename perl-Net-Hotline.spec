@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	Hotline
 Summary:	Net::Hotline - Perl libraries for the Hotline internet client
-Summary(pl):	Net::Hotline - biblioteki perla dla internetowego klienta Hotline
+Summary(pl):	Net::Hotline - biblioteki Perla dla internetowego klienta Hotline
 Name:		perl-Net-Hotline
 Version:	0.83
 Release:	3
@@ -22,14 +22,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::Hotline::Client is a class implementing a Hotline internet client
+Net::Hotline::Client is a class implementing a Hotline Internet client
 in Perl.  It was specifically developed to aid in the creation of Hotline
 "bots," although it's suitable for most other tasks as well. Hotline is
-an internet client/server system that's sort of a cross between IRC and
+an Internet client/server system that's sort of a cross between IRC and
 a BBS.  See http://www.hotlinesw.com/ for more information.
 
-# %description -l pl
-# TODO
+%description -l pl
+Net::Hotline::Client to klasa implementuj±ca internetowego klienta
+Hotline w Perlu. Zosta³a zaprojektowana specjalnie, aby pomóc przy
+tworzeniu "botów" dla Hotline, ale nadaje siê tak¿e dla wiêkszo¶ci
+innych zadañ. Hotline to internetowy system klient-serwer bêd±cy
+skrzy¿owaniem IRC-a i BBS-u. Wiêcej informacji mo¿na znale¼æ pod
+adresem http://www.hotlinesw.com/ .
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
