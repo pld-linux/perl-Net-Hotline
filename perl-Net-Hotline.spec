@@ -3,7 +3,7 @@ Summary:	Net-Hotline perl module
 Summary(pl):	Modu³ perla Net-Hotline
 Name:		perl-Net-Hotline
 Version:	0.78
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
