@@ -27,7 +27,7 @@ Net-Hotline - biblioteki perla dla intenetowego klienta Hotline.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
