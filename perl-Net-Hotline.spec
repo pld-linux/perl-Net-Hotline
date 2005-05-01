@@ -34,7 +34,7 @@ Hotline w Perlu. Zosta³a zaprojektowana specjalnie, aby pomóc przy
 tworzeniu "botów" dla Hotline, ale nadaje siê tak¿e dla wiêkszo¶ci
 innych zadañ. Hotline to internetowy system klient-serwer bêd±cy
 skrzy¿owaniem IRC-a i BBS-u. Wiêcej informacji mo¿na znale¼æ pod
-adresem http://www.hotlinesw.com/ .
+adresem <http://www.hotlinesw.com/>.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
