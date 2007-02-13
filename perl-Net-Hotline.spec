@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Hotline
 Summary:	Net::Hotline - Perl libraries for the Hotline internet client
-Summary(pl.UTF-8):   Net::Hotline - biblioteki Perla dla internetowego klienta Hotline
+Summary(pl.UTF-8):	Net::Hotline - biblioteki Perla dla internetowego klienta Hotline
 Name:		perl-Net-Hotline
 Version:	0.83
 Release:	3
